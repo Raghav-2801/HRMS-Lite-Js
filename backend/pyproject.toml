@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hrms-lite-backend"
+version = "1.0.0"
+description = "Lightweight Human Resource Management System API"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "fastapi==0.109.0",
+    "uvicorn[standard]==0.27.0",
+    "sqlalchemy==2.0.25",
+    "pydantic[email]==2.7.0",
+    "python-multipart==0.0.6",
+]
+
+[tool.setuptools]
+packages = []
