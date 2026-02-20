@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/HRMS/', // Production base path: kapilraghav.info/HRMS/
+  base: '/HRMS-Lite/', // Production base path: kapilraghav.info/HRMS-Lite/
   build: {
     outDir: 'dist',
     minify: 'terser', // Better minification
