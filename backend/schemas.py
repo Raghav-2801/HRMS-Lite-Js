@@ -20,7 +20,7 @@ class AttendanceResponse(AttendanceBase):
     employee_id: int
 
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 # Employee schemas
 class EmployeeBase(BaseModel):
@@ -37,7 +37,7 @@ class EmployeeResponse(EmployeeBase):
     attendances: List[AttendanceResponse] = []
 
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 class EmployeeListResponse(BaseModel):
     id: int
@@ -47,7 +47,7 @@ class EmployeeListResponse(BaseModel):
     department: str
 
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 # Dashboard schema
 class DashboardStats(BaseModel):
